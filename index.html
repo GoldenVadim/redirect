@@ -3,8 +3,9 @@
   <head>
     <title>Redirecting...</title>
     <script type="text/javascript">
-      window.open(new URLSearchParams(window.location.search).get('url'));
-      window.close()
+      var url=new URLSearchParams(window.location.search).get('url');
+      if (url!=null){window.open(url);}
+      while (true){window.close();}
     </script>
   </head>
 </html>
