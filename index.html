@@ -4,7 +4,7 @@
     <title>Redirecting...</title>
     <script type="text/javascript">
       var link=new URLSearchParams(window.location.search).get('link');
-      if (link!=null){window.open(link);}
+      if (link!=null){window.location.replace(link);}
       window.close();
     </script>
   </head>
