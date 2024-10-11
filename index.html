@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-      var link=new URLSearchParams(window.location.search).get('link');
+    <title>Redirecting... [CLOSE THIS WINDOW]</title>
+    <script>
+      const link=new URLSearchParams(window.location.search).get('link');
       if (link!=null){window.location.replace(link);}
-      window.close();
+      else{window.close();}
     </script>
   </head>
 </html>
